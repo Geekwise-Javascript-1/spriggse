@@ -43,22 +43,22 @@ else {
 // lynda.com
 // free with libery card
 var meme = new Array("me-mes", "me me ", "jif","gif");
-var girls = new Array("diana", "maddy", "gio", "haley");
-var me = girls.concat(meme);
+var buddy = new Array("bill", "dany", "gio", "haley");
+var me = buddy.concat(meme);
 console.log(me)
-var dad = new Array();
-dad[0] = "hi";
-dad[1] = "i like bauhaus";
-var hat = dad.concat(me);
+var dan = new Array();
+dan[0] = "hi";
+dan[1] = "i like things ";
+var hat = dan.concat(me);
 console.log(hat);
-var movieGoods = new Array("pokemon", "idk","romancing the stone")
+var movieGoods = new Array("something", "idk","movie something")
 var string = movieGoods.join();
-girls.push("arin","jarid");
-girls.sort();
-console.log(girls);
-girls.reverse();
-console.log(girls);
-dad[3] ="wat";
+buddy.push("arin","jarid");
+buddy.sort();
+console.log(buddy);
+buddy.reverse();
+console.log(buddy);
+dan[3] ="wat";
 var person = ["John", "Doe", 46];
 person.pop();
 person.push("jimy jamms")
