@@ -1,3 +1,4 @@
+
 var firstName = prompt("what is your first name" );
 console.log(firstName);
 var lastName = prompt("what is your last name" );
@@ -38,3 +39,32 @@ else {
   console.log(petType);
 
   }
+
+// lynda.com
+// free with libery card
+var meme = new Array("me-mes", "me me ", "jif","gif");
+var girls = new Array("diana", "maddy", "gio", "haley");
+var me = girls.concat(meme);
+console.log(me)
+var dad = new Array();
+dad[0] = "hi";
+dad[1] = "i like bauhaus";
+var hat = dad.concat(me);
+console.log(hat);
+var movieGoods = new Array("pokemon", "idk","romancing the stone")
+var string = movieGoods.join();
+girls.push("arin","jarid");
+girls.sort();
+console.log(girls);
+girls.reverse();
+console.log(girls);
+dad[3] ="wat";
+var person = ["John", "Doe", 46];
+person.pop();
+person.push("jimy jamms")
+console.log(person);
+var funFinn = new Array("dill","milk","ribs","sause");
+funFinn.pop();
+for (i =0;i<funFinn.length;i++){
+  document.write(funFinn[i] + "<br/>")
+}
