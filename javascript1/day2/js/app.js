@@ -42,9 +42,9 @@ else {
 
 // lynda.com
 // free with libery card
-var meme = new Array("me-mes", "me me ", "jif","gif");
+var aThing = new Array("stuff", "git hub", "jif","gif");
 var buddy = new Array("bill", "dany", "gio", "haley");
-var me = buddy.concat(meme);
+var me = buddy.concat(aThing);
 console.log(me)
 var dan = new Array();
 dan[0] = "hi";
