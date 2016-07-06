@@ -27,47 +27,48 @@ var badEnd = "you died";
 if(startGame == true){
   var land = prompt(lost);
 }
-  if ((lost == "look-up"  ) || (lost == 1)){
-
+  if ((land == "look-up"  ) || (land == 1)){
+alert("you see branches ");
+//pick-up stick
   }
-  else if  ((lost == "turn-right") || (lost == 2)  ){
-
-  }
-
-    else if  ((lost == "turn-left"  ) || (lost == 3)){
-
-  }
-    else if  ((lost == "look-down"  ) || (lost == 4)){
+  else if  ((land == "turn-right") || (land == 2)  ){
 
   }
 
-    else if ((lost == "look-foward") || (lost == 5)) {
+    else if  ((land == "turn-left"  ) || (land == 3)){
 
   }
-    else if  ((lost == "move-foward"  ) || (lost == 6)){
+    else if  ((land == "look-down"  ) || (land == 4)){
+
+  }
+
+    else if ((land == "look-foward") || (land == 5)) {
+
+  }
+    else if  ((land == "move-foward"  ) || (land == 6)){
 
   }
 
 
-    else if  (lost == "move-backward"  ){
+    else if  (land == "move-backward"  ){
       alert("you walk back without looking you slip and fall hitting your headon a hard object " + badEnd)
   }
-    else if ((lost == "look-backward") || (lost == 8)) {
+    else if ((land == "look-backward") || (land == 8)) {
 
   }
-    else if ((lost == "comands?") || (lost == 9)){
+    else if ((land == "comands?") || (land == 9)){
 
   }
-    else if (lost == "help"){
+    else if (land == "help"){
       alert("you yell for help attacting the animals in the area to a free meal. " + " " + badEnd)
   }
-    else if ((lost == "pick-up") || (lost == 11)){
+    else if ((land == "pick-up") || (land == 11)){
 
   }
-    else if ((lost == "hint") || (lost == 12)){
+    else if ((land == "hint") || (land == 12)){
 
   }
-    else if ((lost == "magic") || (lost == 13)){
+    else if ((land == "magic") || (land == 13)){
 
   }else {
     prompt("i dont understand please use words on my list of comands")
