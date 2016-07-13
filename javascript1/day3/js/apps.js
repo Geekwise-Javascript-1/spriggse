@@ -1,10 +1,14 @@
 
 alert("hi");
 
-var user = prompt('what would you like to do');
-if (user === "") {
+var userfun = prompt('what would you like to do');
+var trimmedUser = userfun.trim();
+console.log(userfun);
+if (trimmedUser === "") {
   prompt("please talk");
+  console.log('you make me cry')
 }else {
-  alert( user + " then do that");
-  console.log(user);
+  alert( userfun + " then do that");
+  console.log(trimmedUser);
+  console.log(userfun);
 }

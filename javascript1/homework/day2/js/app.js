@@ -8,7 +8,7 @@ if ((age >= 18) && (year < 1998)) {
 prompt("lier ");
 }else if ((age <= 18) && (year < 1998)) {
 
-}else {
+}else if{
   var parent = confirm("is your parent or gardian fine with you using this site");
   if (parent == true) {
     console.log("player1");
@@ -16,6 +16,8 @@ prompt("lier ");
   }else {
     prompt("good bye")
   }
+}else {
+  
 }
 document.write("comands are: look-up , look-down , look-foward , look-backward ,");
 document.write(" turn-right , turn-left , pick-up , hint , magic , help ");

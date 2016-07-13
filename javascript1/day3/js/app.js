@@ -1,6 +1,6 @@
 
 alert("hi");
-/*
+
 var fName = prompt("what is your first name");
 // this will take user input for first names
 var lName = prompt("what is your last name");
@@ -46,8 +46,7 @@ var e = c + d;
 alert(e);
 // long way of writing
 console.log(isNaN(g));
-*/
-/*
+
 var a = '5';
 if(a === 5 ){
   alert('yes it is');
@@ -77,7 +76,7 @@ if(a === 5 ){
    }else {
      alert("you beat me")
    }
-*/
+
 //var color = 'green';
 
 var color = prompt("pick a color");
