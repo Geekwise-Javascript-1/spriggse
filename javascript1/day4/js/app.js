@@ -40,7 +40,7 @@ function Myname(){
  var name = prompt('what is your name');
  var low = name.toLowerCase();
  var run= low.toUpperCase();
- var cat =run.charAt(0);
+ var cat = run.charAt(0);
  var man = name.slice(1);
  alert( cat + man);
 
