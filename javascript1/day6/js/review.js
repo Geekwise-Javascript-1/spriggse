@@ -1,55 +1,5 @@
 /*
-function giveItToMe (){
-var gotSomething = prompt('type something');
-console.log(gotSomething);
-console.log(typeof(gotSomethin));
-
-if (!gotSomething) {
-alert("you must type something")
-giveItToMe();
-//if ( (gotSomething == "") || (gotSomething == null) )
-  console.log('its true');
-
-
-}else {
-alert('gez! its about time ');
-console.log(gotSomething);
-}
-}
-
-giveItToMe();
-
-//var color = 'red, orange, yellow, green';
-var myArr = [1, 2, 3];
-var favFruits = ['banana','cherry','pineapple','apple','grapes'];
-console.log(favFruits.length);
-fruits.push('apple');
-console.log(favFruits);
-console.log(favFruits.length);
-*/
-
-
-
-
-
-//var fruitColors = [];
-//var cherry = ['cherry','red'];
-//var banana = ['banana','yellow'];
-//var apple = ['apple','green'];
-//fruitColors.push(cherry);
-//fruitColors.push(banana);
-//fruitColors.push(apple);
-
-//console.log(fruitColors[0][0] +' '+fruitColors[1][1]);
-//var fruits = ['banana','cherry','pineapple','apple','grapes'];
-//var lastFruits = fruits.pop();
-//console.log(lastFruits);
-//console.log(fruits);
-//var getFruit = fruits.slice(1,3,'grapes');
-//console.log(getFruit);
-//console.log(fruits);
-
-//part1
+ //part1
 var firstNum = parseInt(prompt('pick a number'));
 var secondNum = parseInt(prompt('pick a second number'));
 if (isNaN(firstNum) || isNaN(secondNum)) {
@@ -95,3 +45,80 @@ alert("on of those is NaN")
   var nums = firstNum + secondNum + thridNum + fourthNum;
   console.log(nums);
 }
+
+*/
+/*
+
+// class answer
+//part1
+//var getNum = parseInt(prompt("type a number"));
+function powerOf(numOne){
+  if(!numOne){
+    return NaN;
+  }
+  alert(numOne);
+  return numOne * numOne;
+
+}
+//alert(powerOf(getNum));
+//part 2
+//var getStr = prompt('type a sentence');
+//var res = capPeriodStr(getStr);
+function capPeriodStr(str);
+var upper = str.charAt(0).toUpperCase() + str.slice(1);
+var lastChar = upper.length - 1;
+console.log(str[lastChar]);
+if(lastChar !== '.' ){
+  return upper + '.';
+}
+return upper;
+}
+//alert(res);
+//part 3
+*/
+var getStr = prompt('type a sentence');
+var flipped = flipThatStr(getStr);
+function flipThatStr(str){
+  if (!str ) {
+return '';
+  }
+  else if (str.length % 2 === 0) {
+    var calc = math.floor(str.length /2);
+    var firstHalf = str.substring(0,getStr.length/2);
+    var secondHalf = str.substring(calc);
+    return secondHalf + firstHalf;
+  }else {
+
+
+
+
+  var firstHalf = str.substring(0,getStr.length/2);
+  var secondHalf = str.substring(str.length/2);
+  return secondHalf + firstHalf;
+}
+}
+alert(flipped);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//rrrr
