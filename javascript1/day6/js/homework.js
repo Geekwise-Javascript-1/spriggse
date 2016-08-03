@@ -70,7 +70,7 @@ span.innerHTML = fruits;
 
 
 
-
+}
 /*
 switch () {
     case 0:
@@ -99,7 +99,7 @@ switch () {
   //alert(input1.value);
 //  span.innerHTML = input2.value;
   //updateOutput(input2.value);
-}
+
 // homework
 /*
 5 inputs
