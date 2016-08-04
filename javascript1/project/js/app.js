@@ -1,24 +1,16 @@
-
-
-
 var ul = document.querySelector('ul');
 var form = document.querySelector('#submit');
 var totalItems = 0;
-
 form.addEventListener('click', function(evt){
+  // use a no name function
     totalItems++;
-
     var item = document.querySelector('#toDoItem').value;
-
     var li = e('li', null , {id:'li'+totalItems}, {'list-style-type': "none", 'border-bottom': '1px  solid rgb(16, 17, 18)', 'height': '45px', 'padding-top': '5px', 'padding-bottom': '5px'});
-
     ul.appendChild(li);
-
     var p = e('p', item, {id:'p'+totalItems}, {'display':"inline"});
     var input = e('input',null, {type:"checkbox", id:"inlineCheckbox"+totalItems, name:"checkbox"}, null);
     var edit = e('button', "Edit", {id: 'edit'+totalItems, class:"btn btn-info pull-right", type:"button"});
     var deleteButton = e('button', "Delete", {id: 'delete'+ totalItems, class:"btn btn-danger pull-right"}, {margin: '0 10px'});
-
     li.appendChild(input);
     li.appendChild(p);
     li.appendChild(edit);
@@ -30,7 +22,7 @@ form.addEventListener('click', function(evt){
 
     evt.preventDefault();
 });
-
+//slash box checkbox
 function itemComplete(){
     var check = this.id.replace("inlineCheckbox", "");
     var btn = document.querySelector('#edit'+check);
@@ -40,12 +32,14 @@ function itemComplete(){
 
         btn.setAttribute('disabled', 'disabled');
         strikethrough.style.textDecoration = 'line-through';
+
     } else {
         strikethrough.style.textDecoration = 'none';
         btn.removeAttribute('disabled');
     }
 }
-
+//end of slash box checkbox
+//remove items from the list
 function itemDelete(){
     var d = confirm("Are you sure you want to delete this item");
     var deleteBtn = this.id.replace("delete", "");
@@ -59,7 +53,8 @@ function itemDelete(){
     }
 
 }
-
+//end remove items from the list
+// edit items
 function editItem(){
     var newText = prompt("Please enter the new item.");
     var itemEdit = this.id.replace('edit', "");
@@ -68,7 +63,7 @@ function editItem(){
     editP.innerText = newText;
 
 }
-
+// end edit items
 function e(elementType, text, attributes, styles) {
     var element = document.createElement(elementType);
     element.textContent = text || "";
@@ -87,8 +82,3 @@ function e(elementType, text, attributes, styles) {
 
     return element;
 }
-
-
-
-//disappear the edit button after checked :(
-//finish project

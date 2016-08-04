@@ -1,0 +1,15 @@
+div{
+  width: 400px;
+  padding: 20px;
+  background-color: teal;
+}
+ul{
+  width: 350px;
+  padding: 20px;
+  background-color: pink;
+}
+li{
+  width: 300px;
+  padding: 20px;
+  background-color: blue;
+}
